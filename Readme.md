@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Polina Goltsova](https://up.htmlacademy.ru/adaptive-individual/2/user/2368577).
-* Наставник: `Неизвестно`.
+* Наставник: `Максим Боровик`.
 
 ---
 

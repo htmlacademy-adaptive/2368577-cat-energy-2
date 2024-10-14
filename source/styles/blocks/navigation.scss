@@ -1,0 +1,22 @@
+// .navigation {
+
+// }
+
+.navigation__list {
+  font-family: $secondary-font;
+  line-height: 20px;
+  font-size: 20px;
+}
+
+.navigation__item {
+  list-style-type: none;
+}
+
+// .navigation__item--current{
+
+// }
+
+.navigation__link {
+  text-decoration: none;
+  color: #000000;
+}

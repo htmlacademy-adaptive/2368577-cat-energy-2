@@ -1,13 +1,26 @@
-// .promo-wrapper {
+.promo-wrapper {
+  background-color: $brand_green;
+  width: 280px;
+  height: 290px;
+  background-image: url("../../images/background-promo-image-mobile@2x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
 
-// }
+.promo-wrapper::before {
+  content: "";
+  background-image: url("../../icons/stack.svg#icon-gift");
+  background-repeat: no-repeat;
+  width: 78px;
+  height: 80px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
 
 .promo-wrapper__text {
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
-}
-
-.promo-wrapper__image {
-  background-color: $basic_green;
 }

@@ -6,18 +6,32 @@
   list-style-type: none;
 }
 
-// .social__link {
+.social__link {
+  display: block;
+  height: 22px;
+  width: 28px;
+  background-color: #666666;
+}
 
-// }
+.social__link:hover {
+  background-color: $brand_green;
+}
 
-// .social__link--vkontakte {
 
-// }
+.social__link--vkontakte {
+  mask-image: url("../../icons/stack.svg#icon-vk");
+  mask-position: center;
+  mask-repeat: no-repeat;
+}
 
-// .social__link--youtube {
+.social__link--youtube {
+  mask-image: url("../../icons/stack.svg#icon-youtube");
+  mask-position: center;
+  mask-repeat: no-repeat;
+}
 
-// }
-
-// .social__link--telegram {
-
-// }
+.social__link--telegram {
+  mask-image: url("../../icons/stack.svg#icon-telegram");
+  mask-position: center;
+  mask-repeat: no-repeat;
+}

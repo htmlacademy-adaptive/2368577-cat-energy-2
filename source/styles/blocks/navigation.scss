@@ -20,3 +20,19 @@
   text-decoration: none;
   color: #000000;
 }
+
+.navigation__button {
+  background-image: url("../../icons/stack.svg#icon-burger");
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: inherit;
+}
+
+.navigation__button--close {
+  background-image: url("../../icons/stack.svg#icon-cross-close");
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+}

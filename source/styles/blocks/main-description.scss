@@ -1,8 +1,12 @@
 .main-description {
   color: #ffffff;
-  background-color: $basic_green;
+  background-color: $brand_green;
   font-family: $secondary-font;
+  background-image: url("../../images/background-main-image-mobile@2x.png");
+  background-repeat: no-repeat;
+  background-size: 320px 302px;
 }
+
 
 .main-description__title {
   font-size: 36px;

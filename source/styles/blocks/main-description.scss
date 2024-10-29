@@ -1,27 +1,93 @@
 .main-description {
   color: #ffffff;
-  background-color: $brand_green;
   font-family: $secondary-font;
-  background-image: url("../../images/background-main-image-mobile@2x.png");
+  background-image: url("../../images/background-main-image-mobile@1x.png");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/background-main-image-mobile@2x.png");
+  }
   background-repeat: no-repeat;
   background-size: 320px 302px;
+  display: flex;
+  flex-direction: column;
+
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+    background-image: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    display: grid;
+    grid-template: "title  img" auto "text   img" auto "button img" 54px / 1fr 1fr;
+  }
+}
+
+.main-description::after {
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/background-main-image-decktop@2x.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../images/background-main-image-decktop@1x.png");
+    content: "";
+    background-repeat: no-repeat;
+    width: 720px;
+    height: 684px;
+    position: absolute;
+    right: -14px;
+    bottom: 100px;
+    z-index: -1;
+  }
 }
 
 
 .main-description__title {
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: title;
+  }
 }
 
 .main-description__text {
   font-size: 14px;
   line-height: 14px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: text;
+  }
+}
+
+.main-description__image-wrapper {
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: img;
+  }
 }
 
 // .main-description__image {
 
 // }
 
-// .main-description__button {
-
-// }
+.main-description__button {
+  @media (min-width: $desktop-width) {
+    grid-area: button;
+  }
+}

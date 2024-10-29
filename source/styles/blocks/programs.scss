@@ -3,12 +3,48 @@
 // }
 
 .programs__list {
-  background-color: $basic_grey;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    padding: 0 110px;
+  }
 }
 
 .programs__item {
   list-style-type: none;
   position: relative;
+  margin-bottom: 20px;
+  width: 280px;
+  min-height: 266px;
+  background-color: $basic_grey;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    min-height: 372px;
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    min-height: 374px;
+    margin-bottom: 70px;
+  }
+}
+
+.programs__item:nth-child(2n+1) {
+  @media (min-width: $desktop-width) {
+    margin-right: 80px;
+  }
 }
 
 .programs__item::before {
@@ -20,16 +56,41 @@
   position: absolute;
   left: -30px;
   bottom: 100px;
+
+  @media (min-width: $tablet-width) {
+    left: 400px;
+    bottom: 100px;
+  }
 }
 
 .programs__item--slim::before {
   background-image: url("../../icons/stack.svg#icon-cat-slim");
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 211px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 106px;
+  }
 }
 
 .programs__item--pro::before {
   background-image: url("../../icons/stack.svg#icon-cat-pro");
   width: 67px;
   height: 50px;
+
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 100px;
+  }
 }
 
 .programs__item-title {
@@ -37,11 +98,28 @@
   line-height: 37px;
   font-size: 24px;
   color: #000000;
+  align-self: center;
+
+  @media (min-width: $tablet-width) {
+    align-self: self-start;
+    font-weight: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $tablet-width) {
+    align-self: center;
+    font-weight: 36px;
+    line-height: 36px;
+  }
 }
 
-// .programs__item-description {
-
-// }
+.programs__item-description {
+  @media (min-width: $tablet-width) {
+    width: 340px;
+    font-weight: 16px;
+    line-height: 24px;
+  }
+}
 
 .programs__item-link {
   font-family: $secondary-font;
@@ -50,6 +128,10 @@
   text-decoration: none;
   color: #000000;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 20px;
+  }
 }
 
 .programs__item-link::after {

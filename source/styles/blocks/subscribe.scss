@@ -1,5 +1,16 @@
 .subscribe {
   font-family: $secondary-font;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
 }
 
 .subscribe__title {
@@ -14,9 +25,14 @@
   color: #000000;
 }
 
-// .subscribe__form {
+.subscribe__form {
+  display: flex;
+  flex-direction: column;
 
-// }
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
 
 .subscribe__field {
   font-family: $secondary-font;

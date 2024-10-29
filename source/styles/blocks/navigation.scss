@@ -6,6 +6,13 @@
   font-family: $secondary-font;
   line-height: 20px;
   font-size: 20px;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .navigation__item {
@@ -19,6 +26,16 @@
 .navigation__link {
   text-decoration: none;
   color: #000000;
+
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+  }
+}
+
+.navigation__link--dark {
+  @media (min-width: $desktop-width) {
+    color: #000000;
+  }
 }
 
 .navigation__button {
@@ -28,6 +45,10 @@
   background-repeat: no-repeat;
   border: none;
   background-color: inherit;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .navigation__button--close {
@@ -35,4 +56,8 @@
   width: 24px;
   height: 24px;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

@@ -1,20 +1,57 @@
-// .benefits {
+.benefits {
+  padding: 0 20px;
 
-// }
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
+}
 
 .benefits__title {
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 40px;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .benefits__list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-bottom: 92px;
+    counter-reset: benefit 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 69px;
+  }
 }
 
 .benefits__item {
   position: relative;
+
+
+  @media (min-width: $tablet-width) {
+    max-width: 249px;
+    height: 280px;
+    counter-increment: benefit 1;
+  }
 }
 
 .benefits__item::before {
@@ -25,6 +62,11 @@
   position: absolute;
   left: 0;
   bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .benefits__item--leaf::before {
@@ -43,6 +85,28 @@
   background-image: url("../../icons/stack.svg#icon-watch");
 }
 
-// .benefits__item-description {
+.benefits__item::after {
+  @media (min-width: $tablet-width) {
+    background-repeat: no-repeat;
+    font-family: $secondary-font;
+    font-weight: 280px;
+    line-height: 280px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: counter(benefit);
+    z-index: -1;
+    color: $basic_grey;
+  }
+}
 
-// }
+.benefits__item-description {
+  width: 200px;
+  padding-left: 80px;
+
+
+  @media (min-width: $tablet-width) {
+    padding-top: 80px;
+    padding-left: 0;
+  }
+}

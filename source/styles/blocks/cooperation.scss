@@ -1,10 +1,19 @@
-.cooperation {
+.cooperation--colored {
+  background-color: $basic_grey;
+
+  @media (min-width: $desktop-width) {
+    background-color: #ffffff;
+  }
+}
+
+
+.cooperation__wrapper {
   display: flex;
-  justify-content: space-between;
   padding: 26px 20px;
 
   @media (min-width: $tablet-width) {
     padding: 60px 70px;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
@@ -12,27 +21,59 @@
     height: 199px;
     align-items: center;
     padding: 60px 80px;
+    position: absolute;
+    content: "";
+    bottom: 106px;
+    left: 110px;
+    z-index: 2;
+    background-color: #ffffff;
   }
 }
 
 
-// .cooperation__container {
+.cooperation__container {
+  width: 140px;
 
-// }
+  @media (min-width: $tablet-width) {
+    width: 163px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
+}
 
 .cooperation__title {
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
   color: #111111;
+  margin: 0;
+  text-transform: uppercase;
+  width: 140px;
+
+  @media (min-width: $tablet-width) {
+    width: 163px;
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .cooperation__container-street {
   font-size: 14px;
   line-height: 20px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 15px;
+  }
 }
 
 .cooperation__container-city {
   font-size: 14px;
   line-height: 20px;
+  margin: 0;
 }

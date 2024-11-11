@@ -1,23 +1,27 @@
-// .catalog {
+.catalog {
+  padding-top: 27px;
 
-// }
+  @media (min-width: $tablet-width) {
+    padding: 0 30px 74px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px 71px;
+  }
+}
 
 .catalog__wrapper {
   display: grid;
-  grid-template-columns: 320px;
-  padding: 0 20px;
 
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 324px 324px;
     gap: 60px;
-    padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 245px);
     gap: 63px 80px;
-    padding: 0 110px;
   }
 }
 
@@ -26,8 +30,16 @@
   font-size: 36px;
   line-height: 36px;
   color: #000000;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 41px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 84px;
+    padding: 0;
+  }
 }
-
-// .catalog__contaiter {
-
-// }

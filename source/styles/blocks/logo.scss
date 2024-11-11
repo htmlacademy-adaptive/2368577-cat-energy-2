@@ -1,21 +1,13 @@
 .logo {
-  text-decoration: none;
-  display: flex;
-  align-items: center;
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
-// .logo__picture {
-
-// }
-
-// .logo__name {
-
-// }
-
-// .logo__name--desktop {
-
-// }
-
-// .logo__name--big {
-
-// }
+.logo__name-footer {
+  display: block;
+}

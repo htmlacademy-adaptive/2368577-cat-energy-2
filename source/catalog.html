@@ -14,7 +14,7 @@
 </head>
 
 <body class="page__body">
-  <header class="header ">
+  <header class="header" data-test="header">
     <a class="main-logo" href="index.html">
       <picture>
         <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-picture-desktop.svg">
@@ -44,13 +44,18 @@
     </nav>
   </header>
   <main class="main-catalog">
-    <section class="catalog container">
+    <section class="catalog container" data-test="catalog">
       <h1 class=" catalog__title">Каталог продукции</h1>
       <div class="catalog__wrapper">
         <div class="catalog__contaiter product-card">
           <a class="product-card__link-image" href="#">
             <div class="product-card__image-wrapper">
               <picture>
+
+                <source width="169" height="210" type="image/webp" media="(min-width: 1440px)" srcset="images/product-chicken500-desktop@1x.webp 1x, images/product-chicken500-desktop@2x.webp 2x">
+                <source width="200" height="210" type="image/webp" media="(min-width: 768px)" srcset="images/product-chicken500-tablet@1x.webp 1x, images/product-chicken500-tablet@2x.webp 2x">
+                <source width="140" height="107" type="image/webp" srcset="images/product-chicken500-mobile@1x.webp 1x, images/product-chicken500-mobile@2x.webp 2x">
+
                 <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/product-chicken500-desktop@1x.png 1x, images/product-chicken500-desktop@2x.png 2x">
                 <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/product-chicken500-tablet@1x.png 1x, images/product-chicken500-tablet@2x.png 2x">
                 <img class="product-card__image" src="images/product-chicken500-mobile@1x.png" srcset="images/product-chicken500-mobile@2x.png 2x" width="140" height="107" alt="продукт с куриным вкусом 500г.">
@@ -81,6 +86,11 @@
           <a class="product-card__link-image" href="#">
             <div class="product-card__image-wrapper">
               <picture>
+
+                <source width="169" height="210" type="image/webp" media="(min-width: 1440px)" srcset="images/product-chicken1000-desktop@1x.webp 1x, images/product-chicken1000-desktop@2x.webp 2x">
+                <source width="200" height="210" type="image/webp" media="(min-width: 768px)" srcset="images/product-chicken1000-tablet@1x.webp 1x, images/product-chicken1000-tablet@2x.webp 2x">
+                <source width="140" height="107" type="image/webp" srcset="images/product-chicken1000-mobile@1x.webp 1x, images/product-chicken1000-mobile@2x.webp 2x">
+
                 <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/product-chicken1000-desktop@1x.png 1x, images/product-chicken1000-desktop@2x.png 2x">
                 <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/product-chicken1000-tablet@1x.png 1x, images/product-chicken1000-tablet@2x.png 2x">
                 <img class="product-card__image" src="images/product-chicken1000-mobile@1x.png" srcset="images/product-chicken1000-mobile@2x.png 2x" width="140" height="107" alt="продукт с куриным вкусом 1000г.">
@@ -111,6 +121,11 @@
           <a class="product-card__link-image" href="#">
             <div class="product-card__image-wrapper">
               <picture>
+
+                <source width="169" height="210" type="image/webp" media="(min-width: 1440px)" srcset="images/product-fish500-desktop@1x.webp 1x, images/product-fish500-desktop@2x.webp 2x">
+                <source width="200" height="210" type="image/webp" media="(min-width: 768px)" srcset="images/product-fish500-tablet@1x.webp 1x, images/product-fish500-tablet@2x.webp 2x">
+                <source width="140" height="107" type="image/webp" srcset="images/product-fish500-mobile@1x.webp 1x, images/product-fish500-mobile@2x.webp 2x">
+
                 <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/product-fish500-desktop@1x.png 1x, images/product-fish500-desktop@2x.png 2x">
                 <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/product-fish500-tablet@1x.png 1x, images/product-fish500-tablet@2x.png 2x">
                 <img class="product-card__image" src="images/product-fish500-mobile@1x.png" srcset="images/product-fish500-mobile@2x.png 2x" width="140" height="107" alt="продукт со вкусом рыбы 500г.">
@@ -141,6 +156,11 @@
           <a class="product-card__link-image" href="#">
             <div class="product-card__image-wrapper">
               <picture>
+
+                <source width="169" height="210" type="image/webp" media="(min-width: 1440px)" srcset="images/product-fish1000-desktop@1x.webp 1x, images/product-fish1000-desktop@2x.webp 2x">
+                <source width="200" height="210" type="image/webp" media="(min-width: 768px)" srcset="images/product-fish1000-tablet@1x.webp 1x, images/product-fish1000-tablet@2x.webp 2x">
+                <source width="140" height="107" type="image/webp" srcset="images/product-fish1000-mobile@1x.webp 1x, images/product-fish1000-mobile@2x.webp 2x">
+
                 <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/product-fish1000-desktop@1x.png 1x, images/product-fish1000-desktop@2x.png 2x">
                 <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/product-fish1000-tablet@1x.png 1x, images/product-fish1000-tablet@2x.png 2x">
                 <img class="product-card__image" src="images/product-fish1000-mobile@1x.png" srcset="images/product-fish1000-mobile@2x.png 2x" width="140" height="107" alt="продукт со вкусом рыбы 1000г.">
@@ -173,6 +193,11 @@
             <div class="product-card__image-wrapper">
 
               <picture>
+
+                <source width="169" height="210" type="image/webp" media="(min-width: 1440px)" srcset="images/product-buckwheat500-desktop@1x.webp 1x, images/product-buckwheat500-desktop@2x.webp 2x">
+                <source width="200" height="210" type="image/webp" media="(min-width: 768px)" srcset="images/product-buckwheat500-tablet@1x.webp 1x, images/product-buckwheat500-tablet@2x.webp 2x">
+                <source width="140" height="107" type="image/webp" srcset="images/product-buckwheat500-mobile@1x.webp 1x, images/product-buckwheat500-mobile@2x.webp 2x">
+
                 <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/product-buckwheat500-desktop@1x.png 1x, images/product-buckwheat500-desktop@2x.png 2x">
                 <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/product-buckwheat500-tablet@1x.png 1x, images/product-buckwheat500-tablet@2x.png 2x">
                 <img class="product-card__image" src="images/product-buckwheat500-mobile@1x.png" srcset="images/product-buckwheat500-mobile@2x.png 2x" width="140" height="107" alt="продукт со вкусом гречки 500г.">
@@ -205,6 +230,11 @@
             <div class="product-card__image-wrapper">
 
               <picture>
+
+                <source width="169" height="210" type="image/webp" media="(min-width: 1440px)" srcset="images/product-buckwheat1000-desktop@1x.webp 1x, images/product-buckwheat1000-desktop@2x.webp 2x">
+                <source width="200" height="210" type="image/webp" media="(min-width: 768px)" srcset="images/product-buckwheat1000-tablet@1x.webp 1x, images/product-buckwheat1000-tablet@2x.webp 2x">
+                <source width="140" height="107" type="image/webp" srcset="images/product-buckwheat1000-mobile@1x.webp 1x, images/product-buckwheat1000-mobile@2x.webp 2x">
+
                 <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/product-buckwheat1000-desktop@1x.png 1x, images/product-buckwheat1000-desktop@2x.png 2x">
                 <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/product-buckwheat1000-tablet@1x.png 1x, images/product-buckwheat1000-tablet@2x.png 2x">
                 <img class="product-card__image" src="images/product-buckwheat1000-mobile@1x.png" srcset="images/product-buckwheat1000-mobile@2x.png 2x" width="140" height="107" alt="продукт со вкусом гречки 1000г.">
@@ -237,6 +267,11 @@
             <div class="product-card__image-wrapper">
 
               <picture>
+
+                <source width="169" height="210" type="image/webp" media="(min-width: 1440px)" srcset="images/product-rice500-desktop@1x.webp 1x, images/product-rice500-desktop@2x.webp 2x">
+                <source width="200" height="210" type="image/webp" media="(min-width: 768px)" srcset="images/product-rice500-tablet@1x.webp 1x, images/product-rice500-tablet@2x.webp 2x">
+                <source width="140" height="107" type="image/webp" srcset="images/product-rice500-mobile@1x.webp 1x, images/product-rice500-mobile@2x.webp 2x">
+
                 <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/product-rice500-desktop@1x.png 1x, images/product-rice500-desktop@2x.png 2x">
                 <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/product-rice500-tablet@1x.png 1x, images/product-rice500-tablet@2x.png 2x">
                 <img class="product-card__image" src="images/product-rice500-mobile@1x.png" srcset="images/product-rice500-mobile@2x.png 2x" width="140" height="107" alt="товар">
@@ -272,7 +307,7 @@
       </div>
     </section>
 
-    <section class="additional-products container">
+    <section class="additional-products container" data-test="additional-products">
       <div class="additional-products__container">
         <h2 class="additional-products__title">Дополнительные товары</h2>
         <div class="additional-products__wrapper-main">
@@ -327,7 +362,7 @@
 
     </section>
 
-    <section class="subscribe">
+    <section class="subscribe" data-test="subscribe">
       <div class="subscribe__container container">
         <h2 class="subscribe__title">Акции и новинки</h2>
         <p class="subscribe__text">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
@@ -351,12 +386,17 @@
     </section>
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
-      <iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A1749bafe1a4d317f923abe7bff50d1e7f415009fd697835fbb90958809d632f7&amp;source=constructor" height="362"></iframe>
+      <iframe class="map__iframe" loading="lazy" src="https://yandex.ru/map-widget/v1/?um=constructor%3A1749bafe1a4d317f923abe7bff50d1e7f415009fd697835fbb90958809d632f7&amp;source=constructor" height="362"></iframe>
       <div class="map__image-wrapper map__image-wrapper--hidden">
         <picture>
+
+          <source width="1440" height="400" type="image/webp" media="(min-width: 1440px)" srcset="images/map-desktop@1x.webp 1x, images/map-desktop@2x.webp 2x">
+          <source width="768" height="400" type="image/webp" media="(min-width: 768px)" srcset="images/map-tablet@1x.webp 1x, images/imap-tablet@2x.webp 2x">
+          <source width="320" height="362" type="image/webp" srcset="images/map-mobile@1x.webp 1x, images/map-mobile@2x.webp 2x">
+
           <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
           <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/imap-tablet@2x.png 2x">
-          <img class="map__image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="карта">
+          <img class="map__image" loading="lazy" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="карта">
         </picture>
       </div>
     </section>

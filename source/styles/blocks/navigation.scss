@@ -21,7 +21,7 @@
 
 .navigation__list--disabled {
   @media (max-width: $mobile-width-only) {
-    display: block;
+    display: none;
   }
 }
 

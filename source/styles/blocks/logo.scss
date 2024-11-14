@@ -10,4 +10,8 @@
 
 .logo__name-footer {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 42px;
+  }
 }

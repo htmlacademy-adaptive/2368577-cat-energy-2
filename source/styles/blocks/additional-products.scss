@@ -37,6 +37,7 @@
 
 .additional-products__value {
 
+  width: 140px;
   line-height: 20px;
 
   @media (min-width: $tablet-width) {
@@ -172,6 +173,7 @@
     font-size: 20px;
     line-height: 20px;
     margin-bottom: 25px;
+    width: 300px;
   }
 
   @media (min-width: $desktop-width) {

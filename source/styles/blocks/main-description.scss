@@ -102,7 +102,7 @@
   font-weight: 400;
   margin: 0;
   margin-bottom: 25px;
-
+  width: 250px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -110,11 +110,12 @@
     margin-bottom: 40px;
     text-align: start;
     padding-left: 120px;
+    width: 700px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 190px;
-    grid-column: 1 / 2;
+    grid-column: 1 / 1;
   }
 }
 
@@ -130,11 +131,11 @@
     line-height: 20px;
     margin-bottom: 50px;
     padding-left: 120px;
+    text-align: start;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 190px;
-    text-align: start;
     margin-bottom: 52px;
     grid-column: 1 / 2;
   }
@@ -144,7 +145,7 @@
   @media (min-width: $tablet-width) {
     order: 1;
     z-index: -1;
-    margin-top: -83px;
+    margin-top: -86px;
     padding-left: 30px;
     padding-right: 30px;
     display: block;

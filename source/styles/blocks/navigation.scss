@@ -12,6 +12,7 @@
     align-items: center;
     font-size: 18px;
     line-height: 24px;
+    gap: 20px 33px;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,7 +22,7 @@
 
 .navigation__list--disabled {
   @media (max-width: $mobile-width-only) {
-    display: none;
+    display: block;
   }
 }
 
@@ -33,7 +34,6 @@
 
 .navigation__item {
   list-style-type: none;
-  min-height: 65px;
   text-align: center;
   border-top: 1px solid #e6e6e6;
   padding-top: 22px;
@@ -44,16 +44,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    min-height: 50px;
     padding-top: 0;
     padding-bottom: 0;
     display: flex;
     align-items: center;
-    margin-right: 33px;
     border: none;
 
     &:last-child {
-      margin-right: 0;
       border: none;
     }
   }

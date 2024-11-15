@@ -49,6 +49,11 @@
   left: 100px;
   top: 60px;
 
+  @media (min-width: $tablet-width) {
+    left: 78px;
+    top: 56px;
+  }
+
   @media (min-width: $desktop-width) {
     left: 85px;
   }

@@ -1,5 +1,5 @@
 .product-card {
-  padding: 20px 20px 25px;
+  padding: 21px 20px 25px;
   display: grid;
   grid-template-columns: 140px 140px;
   grid-template-rows: auto auto 40px;
@@ -8,7 +8,7 @@
 
   @media (min-width: $tablet-width) {
     width: 324px;
-    padding: 10px 37px 40px;
+    padding: 13px 37px 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -128,7 +128,8 @@
 
   @media (min-width: $desktop-width) {
     width: 169px;
-    margin-bottom: 32px;
+    margin-bottom: 42px;
+    gap: 13px;
   }
 }
 

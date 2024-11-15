@@ -20,6 +20,10 @@
     background-color: $brand_green;
   }
 
+  &:focus {
+    background-color: #ff8282;
+  }
+
   &:active {
     opacity: 0.3;
   }

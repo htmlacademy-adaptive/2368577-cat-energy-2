@@ -9,9 +9,8 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     padding: 25px 34px 65px 30px;
-    // justify-content: flex-start;
   }
 
   @media (min-width: $desktop-width) {
@@ -79,5 +78,11 @@
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.header__navigation {
+  @media (min-width: $tablet-width) {
+    align-self: center;
   }
 }

@@ -15,6 +15,8 @@
   height: 22px;
   width: 28px;
   background-color: #666666;
+  mask-position: center;
+  mask-repeat: no-repeat;
 
   &:hover {
     background-color: $brand_green;
@@ -25,25 +27,19 @@
   }
 
   &:active {
+    background-color: $brand_green;
     opacity: 0.3;
   }
 }
 
-
 .social__link--vkontakte {
   mask-image: url("../../icons/stack.svg#icon-vk");
-  mask-position: center;
-  mask-repeat: no-repeat;
 }
 
 .social__link--youtube {
   mask-image: url("../../icons/stack.svg#icon-youtube");
-  mask-position: center;
-  mask-repeat: no-repeat;
 }
 
 .social__link--telegram {
   mask-image: url("../../icons/stack.svg#icon-telegram");
-  mask-position: center;
-  mask-repeat: no-repeat;
 }

@@ -47,7 +47,7 @@
 }
 
 .header__button-close--disabled {
-  display: block;
+  display: none;
 
   @media (min-width: $tablet-width) {
     display: none;
